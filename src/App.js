@@ -3,7 +3,6 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import Menu from "./components/Menu";
 import Header from "./components/Header";
-import Introduction from "./components/Introduction";
 
 function App() {
   const [data, setData] = useState({});
@@ -27,8 +26,7 @@ function App() {
     <span>En cours de chargement...</span>
   ) : (
     <div>
-      <Header />
-      <Introduction data={data} />
+      <Header data={data} />
       {categories.slice(0, 6).map((category, index) => {
         return (
           <Menu key={index} title={category.name} meals={category.meals} />

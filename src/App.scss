@@ -1,1 +1,70 @@
-/* Other rules */
+/* IMPORT */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+$font1: "Roboto", sans-serif;
+
+/* HEADER */
+
+.header {
+  width: 100vw;
+  height: 300px;
+
+  .topBar {
+    height: 60px;
+    border-bottom: solid 1px #e9ebeb;
+    box-sizing: border-box;
+
+    .logo-center {
+      width: 1200px;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+
+      img {
+        height: 90%;
+        box-sizing: border-box;
+        justify-content: flex-start;
+      }
+    }
+  }
+  .restaurant-infos {
+    height: 240px;
+
+    .restaurant-center {
+      width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: flex-start;
+      padding: 30px 0;
+
+      .restaurant-text {
+        flex: 1;
+        margin-right: 2rem;
+
+        h1 {
+          font-family: $font1;
+          font-weight: 700;
+          font-size: 2rem;
+          margin-top: 0.2rem;
+          margin-bottom: 2rem;
+        }
+
+        p {
+          font-family: $font1;
+          font-size: 1.2rem;
+          line-height: 1.5rem;
+          color: #868a8a;
+        }
+      }
+      .restaurant-img {
+        width: 350px;
+        overflow: hidden;
+        box-sizing: border-box;
+        border-radius: 0.3rem;
+      }
+    }
+  }
+}
